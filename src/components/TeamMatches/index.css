@@ -1,0 +1,72 @@
+/* Write your CSS here */
+.team-matches-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 24px;
+}
+.RCB {
+  background-image: linear-gradient(to bottom, #d91c1f, #a4261d);
+}
+
+.CSK {
+  background-image: linear-gradient(to bottom, #f7db00, yellow);
+}
+.KKR {
+  background-image: linear-gradient(to bottom, #5755a7, #4f5db0);
+}
+.KXP {
+  background-image: linear-gradient(to bottom, #a4261d, #1e293b);
+}
+.RR {
+  background-image: linear-gradient(to bottom, pink, #da237b);
+}
+.MI {
+  background-image: linear-gradient(to bottom, #5755a7, #13418b);
+}
+.SH {
+  background-image: linear-gradient(to bottom, orange, #f26d22);
+}
+.DC {
+  background-image: linear-gradient(to bottom, #4f5db0, #13418b);
+}
+.team-matches-responsive-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bree Serif';
+}
+@media screen and (min-width: 768px) {
+  .team-matches-responsive-container {
+    width: 85%;
+  }
+}
+
+.banner-image {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.latest-matches-text {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-weight: 500;
+  font-size: 24px;
+  align-self: flex-start;
+}
+@media screen and(min-width: 768px) {
+  .latest-matches-text {
+    font-size: 32px;
+  }
+}
+.recent-matches-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 32px;
+  width: 100%;
+}

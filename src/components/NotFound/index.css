@@ -1,0 +1,38 @@
+/* Write your CSS here */
+/* Write your CSS here */
+.not-found-container {
+  min-height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .not-found-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  }
+}
+
+.not-found-responsive-container {
+  width: 80%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found-responsive-container {
+    width: 75%;
+  }
+}
+
+.not-found-heading {
+  font-family: 'Bree Serif';
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
+}

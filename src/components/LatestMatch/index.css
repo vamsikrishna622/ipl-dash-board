@@ -1,0 +1,96 @@
+/* Write your CSS here */
+.latest-match-container {
+  background-color: #1e293b;
+  border-radius: 12px;
+
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .latest-match-container {
+    flex-direction: column;
+  }
+}
+.competing-team-name {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .competing-team-name {
+    font-size: 32px;
+  }
+}
+.date {
+  font-size: 16px;
+}
+.text-venue {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .date {
+    font-size: 26px;
+  }
+  .text-venue {
+    font-size: 20px;
+  }
+}
+.first-part {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 32px;
+}
+@media (min-width: 768px) {
+  .first-part {
+    width: 65%;
+  }
+}
+.competing-team-logo {
+  width: 88px;
+  height: 88px;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .competing-team-logo {
+    height: 244px;
+    width: 244px;
+  }
+}
+.last-part {
+  padding: 32px;
+}
+@media screen and (max-width: 575px) {
+  .last-part {
+    align-self: flex-start;
+  }
+}
+.upper-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .upper-text {
+    text-align: right;
+  }
+}
+.lower-text {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .lower-text {
+    text-align: right;
+  }
+}
+.line {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .line {
+    display: block;
+    border: solid 2px #475569;
+    width: 100%;
+  }
+}
