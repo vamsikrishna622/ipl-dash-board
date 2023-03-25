@@ -10,7 +10,6 @@ class TeamMatches extends Component {
     teamBannerUrl: '',
     latestMatchDetails: '',
     recentMatches: [],
-    gradient: '',
     isLoading: true,
   }
 
@@ -58,22 +57,47 @@ class TeamMatches extends Component {
       teamBannerUrl: data.team_banner_url,
       latestMatchDetails: formattedLatestMatchDetails,
       recentMatches: formattedRecentMatchDetails,
-      gradient: id,
       isLoading: false,
     })
   }
 
+   getRouteClassName = () => {
+    const {match} = this.props
+    const {params} = match
+    const {id} = params
+
+    switch (id) {
+      case 'RCB':
+        return 'rcb'
+      case 'KKR':
+        return 'kkr'
+      case 'KXP':
+        return 'kxp'
+      case 'CSK':
+        return 'csk'
+      case 'RR':
+        return 'rr'
+      case 'MI':
+        return 'mi'
+      case 'SH':
+        return 'srh'
+      case 'DC':
+        return 'dc'
+      default:
+        return ''
+    }
+  }
+  
   render() {
     const {
       teamBannerUrl,
       latestMatchDetails,
       recentMatches,
-      gradient,
       isLoading,
     } = this.state
 
     return (
-      <div className={`team-matches-container ${gradient}`}>
+      <div className={`team-matches-container ${this.getRouteClassName()}`}>
         {isLoading ? (
           <div data-testid="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />
